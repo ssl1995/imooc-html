@@ -22,7 +22,7 @@
             height: 200px;
             background-color: green;
         }
-
+        /* after伪元素法，固定写法 */
         .clearfix:after {
             content: "aaa";
             display: block;
@@ -30,13 +30,14 @@
             clear: both;
             visibility: hidden;
         }
-
-        .clearfix {
+        /* IE6,7专用清除浮动写法 */
+        .clearfix { 
             *zoom: 1;
         }
     </style>
 </head>
 <body>
+    <!-- 添加这个类clearfix -->
     <div class="father clearfix">
         <div class="one"></div>
         <div class="two"></div>
