@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
         .yeye {
+            /* 相对定位：会占据原有位置 */
             position: relative;
             width: 800px;
             height: 800px;
@@ -13,12 +15,15 @@
             margin-top: 100px;
             margin-left: 100px;
         }
+
         .father {
             width: 500px;
             height: 500px;
             background-color: blue;
         }
+
         .son {
+            /* 绝对定位：不会再占据原来的位置，父级如果都没有，以浏览器为主 */
             position: absolute;
             left: 50px;
             top: 50px;
@@ -26,6 +31,7 @@
             height: 200px;
             background-color: orange;
         }
+
         .new {
             width: 200px;
             height: 200px;
@@ -33,6 +39,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="yeye">
         <div class="father">
@@ -40,6 +47,7 @@
             <div class="new"></div>
         </div>
     </div>
-    
+
 </body>
+
 </html>
