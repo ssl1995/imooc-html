@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="p1">俺从不写错字，但俺写通假字</p>
+
+    <script>
+        // 目标：获取p标签对象，获取到对象属性极多，但是不用全部掌握
+        var pDom = document.getElementById('p1');
+        // dir:获取该标签的所有属性,常用
+        console.dir(pDom);
+        // 对象.属性获取
+        pDom.align = "right";
+        pDom.style.color = "red";
+    </script>
+</body>
+
+</html>
