@@ -7,15 +7,16 @@
 </head>
 <body>
     <script>
+        // 对象解构：只能解析key相同的对象属性
         // const {name, age, gender} = {id: 1, name: "王小明", age: 8};
-        // console.log(name);      // 王小明
-        // console.log(age);         // 8
+        // console.log(name);     // 王小明
+        // console.log(age);      // 8
         // console.log(gender);   // undefined
 
-
+        // 取别名
         const {name: username, age} = {id: 1, name: "王小明", age: 8};
-        console.log(username);      // 王小明
-        console.log(age);                // 8
+        console.log(username);     // 王小明
+        console.log(age);          // 8
         console.log(name);
 
 

@@ -50,6 +50,7 @@
         var str = '';
         for (var i = 0; i < userList.length; i++) {
             // str += "<tr><td>" + userList[i].id + "</td><td>" + userList[i].name + "</td><td>" + userList[i].gender + "</td><td>" + userList[i].age + "</td><td><button class='del'>删除</button></td></tr>";
+            // 使用模版字符串：
             str += `
                 <tr>
                     <td>${userList[i].id}</td>

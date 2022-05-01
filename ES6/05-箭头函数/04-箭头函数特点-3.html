@@ -22,6 +22,7 @@
         
         document.querySelector('button').onclick = function () {
             console.log(this);
+            // 箭头函数3：没有this，里面的this指的是外层this
             let e = () => {
                 console.log(this);
             }
