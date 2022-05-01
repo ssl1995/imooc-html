@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div style="margin: 30px auto; width: 500px;height: 100px;">
         <input id="num1" type="text">
@@ -18,7 +20,7 @@
         <button>=</button>
         <span id="result"></span>
     </div>
-    
+
 
     <script>
         var num1 = document.querySelector('#num1');
@@ -27,25 +29,30 @@
         var btn = document.querySelector('button');
         var result = document.querySelector('#result');
         var res = null;
-        
+
         btn.onclick = function () {
             switch (operator.value) {
                 case '+':
+                    // 加
                     res = parseInt(num1.value) + parseInt(num2.value);
                     break;
                 case '-':
-                    res = num1.valu) -num2.value;
+                    // 减
+                    res = num1.value - num2.value;
                     break;
                 case '*':
+                    // 乘
                     res = num1.value * num2.value;
                     break;
                 case '/':
+                    // 除
                     res = num1.value / num2.value;
                     break;
             }
             result.innerHTML = res
         }
-        
+
     </script>
 </body>
+
 </html>

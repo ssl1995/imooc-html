@@ -94,11 +94,11 @@
         // 获取表体复选框
         var checks = document.querySelectorAll('tbody input');
 
-        // 全选复选框绑定点击事件
+        // 全选复选框:点击事件
         allCheck.onclick = function () {
-            // 获取全选复选框的状态
+            // 获取全选复选框的状
             var status = this.checked;
-            // 将状态同步给表体的所有复选框
+            // 表体复选框：将状态同步
             for (var i = 0; i < checks.length; i++) {
                 checks[i].checked = status;
             }
@@ -110,8 +110,9 @@
                 // 循环检测所有表体复选框的状态，一旦有false，则将flag标志设置为false
                 for (var j = 0; j < checks.length; j++) {
                     if(checks[j].checked == false) {
+                        // 如果表体复选框有一个为false，表头复选框为false
                         allCheck.checked = false;
-                        // 当flag变为false时要立即结束循环
+                        // 停止本次循环
                         break;
                     } else {
                         allCheck.checked  = true;

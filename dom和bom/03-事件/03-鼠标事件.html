@@ -17,21 +17,21 @@
     
     <script>
         // 目标：为div绑定四个事件
-        //  鼠标进入事件： 在终端显示 "我进来了"
-        //  鼠标离开事件： 在终端显示 "我又出来了"
-        //  鼠标移动事件： 在终端显示 "打我啊，笨蛋"
-        //  鼠标点击事件： 在终端显示 "啊，我被打了"
 
         var div = document.querySelector('div');
+        //  鼠标进入事件： 在终端显示 "我进来了"
         div.onmouseenter = function () {
             console.log('我进来了');
         }
+        //  鼠标离开事件： 在终端显示 "我又出来了"
         div.onmouseleave = function () {
             console.log('我又出来了');
         }
+        //  鼠标移动事件： 在终端显示 "打我啊，笨蛋"
         div.onmousemove = function () {
             console.log('打我啊，笨蛋');
         }
+        //  鼠标点击事件： 在终端显示 "啊，我被打了"
         div.onclick = function () {
             console.log('啊，我被打了');
         }

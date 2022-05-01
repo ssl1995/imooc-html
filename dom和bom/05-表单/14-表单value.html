@@ -31,7 +31,7 @@
         // 目标： 点击提交按钮时，将所有填写和选中的值输出到终端
         var form = document.querySelector('form');
 
-        // 使用属性选择器获取标签对象
+        // 使用属性选择器获取标签对象：属性选择器要加方括号
         var username = document.querySelector('[type="text"]');
         var password = document.querySelector('[name="password"]');
         var gender = document.querySelectorAll('[name=gender]');
@@ -59,6 +59,7 @@
                 }
             }
 
+            // 取消表单提交
             return false;
         }
         

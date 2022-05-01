@@ -56,10 +56,13 @@
         var btns = document.querySelectorAll('.del')
         for (var i = 0; i < btns.length; i++) {
             btns[i].onclick = function () {
+                // 提示：确定要删除用户吗？
                 var result = confirm('您确定删除该用户吗?');
+
                 if (result == true) {
                     // 找到删除删除按钮对应的 tr 标签
                     var delTr = this.parentNode.parentNode;
+                    
                     tbody.removeChild(delTr);
                 }
             }

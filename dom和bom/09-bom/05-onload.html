@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        // 如果没有onload这个属性，会报null
         window.onload = function () {
             console.log(document.querySelector('div'));
             document.querySelector('div').style.color = 'red';
@@ -13,11 +14,6 @@
     </script>
 </head>
 <body>
-
-
     <div>onload 测试</div>
-
-    
-
 </body>
 </html>

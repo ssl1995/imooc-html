@@ -10,8 +10,10 @@
     <button>点我啊</button>
 
     <script>
+        // 参数e是事件对象：文本框输入回车时进行处理；阻止表单默认动作
         document.querySelector('input').onkeyup = function (e) {
             // console.dir(e);
+            // keyCode=13为回车
             if (e.keyCode == 13) {
                 console.log(this.value);
             }

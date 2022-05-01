@@ -16,15 +16,17 @@
         // 创建一个新的div标签对象
         var divDom = document.createElement('div');
         console.log(divDom);
-        divDom.innerHTML = '新的div';
+        divDom.innerHTML = 'beforeDiv';
         divDom.style.color = 'orange';
 
         // 将新增div添加到柯南前
         var main = document.querySelector('#main');
         // var f = document.querySelector('#f');
+        
+        // 放在前面
         // main.insertBefore(divDom, f);
 
-        // 将新增div追加到main中
+        // 放在最后
         main.appendChild(divDom);
 
     </script>

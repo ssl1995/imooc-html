@@ -29,6 +29,7 @@ pwd.onblur = function () {
 document.querySelector('form').onsubmit = function (e) {
     if (account.value.length < 6 || account.value.length > 12) {
         alert('账号长度不正确，请重新输入');
+        // 阻止表单提交1：返回false
         return false;
     }
     if (pwd.value.length < 8 || pwd.value.length > 18) {
@@ -36,7 +37,7 @@ document.querySelector('form').onsubmit = function (e) {
         return false;
     }
 
-    // 阻止表单提交动作
+    // 阻止表单提交动作2:e.preventDefault()
     // e.preventDefault();
-    // return false;
+
 }

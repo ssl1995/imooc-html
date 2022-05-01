@@ -64,10 +64,12 @@
         var eyeIcon = document.querySelector('.eye span');
 
         eye.onclick = function () {
+            // 加密文本修改成text，可见状态
             if (pwd.type == 'password') {
                 pwd.type = 'text';
                 eyeIcon.className = "iconfont icon-yanjing1";
             } else {
+                // 变回去
                 pwd.type = 'password';
                 eyeIcon.className = "iconfont icon-yanjing";
             }

@@ -94,11 +94,14 @@
                 lis.forEach(function (val, i) {
                     val.className = '';
                 })
+                // 设置当前li为active
                 this.className = 'active';
-
+                
+                // 清空div属性
                 divs.forEach(function (val, i) {
                     val.className = '';
                 })
+                // 设置当前div为current
                 divs[index].className = 'current';
             }
         })
